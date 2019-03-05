@@ -9,10 +9,10 @@
       </div>
     </div>
     <div
+    :class="post.filter"
       class="image-container"
-      :class="post.filter"
       @dblclick="clicklike"
-      :style="{background:'url('+ post.postImage+')'}"
+      :style="{backgroundImage:'url('+ post.postImage+')'}"
     ></div>
     <div class="content">
       <div class="heart">
